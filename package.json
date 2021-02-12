@@ -2,7 +2,8 @@
   "name": "calculator",
   "version": "0.1.0",
   "engines": {
-    "node": "12.x"
+    "node": "12.x",
+    "npm": "7.x"
   },
   "private": true,
   "dependencies": {
