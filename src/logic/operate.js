@@ -1,6 +1,6 @@
 import Big from 'big.js';
 
-export default function operate(numberOne, numberTwo, operation) {
+const operate = (numberOne, numberTwo, operation) => {
   let result = 0;
   const num1 = Big(numberOne);
   const num2 = Big(numberTwo);
@@ -14,7 +14,9 @@ export default function operate(numberOne, numberTwo, operation) {
   } else if (operation === '*') {
     result = num1.times(num2);
   } else if (operation === '%') {
-    result = num1.mod(num2);
+    result = num1.div(100);
   }
   return result;
-}
+};
+
+export default operate;

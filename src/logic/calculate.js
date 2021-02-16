@@ -1,6 +1,6 @@
 import calc from './operate';
 
-export default function calculate(calData, btnName) {
+const calculate = (calData, btnName) => {
   let { total, next, operation } = calData;
   const operators = ['+', '-', '/', '*'];
 
@@ -28,4 +28,6 @@ export default function calculate(calData, btnName) {
   }
 
   return { total, next, operation };
-}
+};
+
+export default calculate;
