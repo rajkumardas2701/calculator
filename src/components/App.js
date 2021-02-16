@@ -4,11 +4,13 @@ import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../logic/calculate';
 
-export default function App() {
-  return (
-    <>
-      <Display />
-      <ButtonPanel />
-    </>
-  );
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: '0',
+      next: null,
+      operation: null,
+    };
+  }
 }
