@@ -14,6 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 10px;
 }
 
 code {
@@ -24,4 +25,43 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+}
+
+.display,
+.groups {
+  width: 80%;
+}
+
+.display {
+  text-align: end;
+  height: 75px;
+  background-color: rgb(146, 146, 145);
+  font-size: larger;
+  padding-right: 5px;
+}
+
+button {
+  width: 25%;
+  height: 75px;
+  font-size: larger;
+}
+
+.G5 > :first-child {
+  width: 50%;
+}
+
+.G1 > :last-child,
+.G2 > :last-child,
+.G3 > :last-child,
+.G4 > :last-child,
+.G5 > :last-child {
+  background-color: rgb(241, 145, 66);
 }
