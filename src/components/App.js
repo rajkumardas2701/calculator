@@ -13,4 +13,13 @@ export default class App extends React.Component {
       operation: null,
     };
   }
+
+  render() {
+    return (
+      <div className="app">
+        <Display />
+        <ButtonPanel />
+      </div>
+    );
+  }
 }
