@@ -1,4 +1,4 @@
-import calc from './operate';
+import operate from './operate';
 
 const calculate = (calData, btnName) => {
   let { total, next, operation } = calData;
@@ -12,7 +12,7 @@ const calculate = (calData, btnName) => {
     next = null;
     operation = null;
   } else if (btnName === '%') {
-    total = calc(total, next, operation);
+    total = operate(total, next, operation);
     next = null;
     operation = null;
   } else if (btnName === '.' && next) {
@@ -20,9 +20,9 @@ const calculate = (calData, btnName) => {
       next += '.';
     }
   } else if (operators.includes(btnName)) {
-    calc(total, next, operation);
+    operate(total, next, operation);
   } else if ((btnName === '=') && (next && total)) {
-    total = calc(total, next, operation);
+    total = operate(total, next, operation);
     next = null;
     operation = null;
   }

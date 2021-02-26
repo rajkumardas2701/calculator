@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
@@ -12,7 +11,6 @@ export default class App extends React.Component {
       next: null,
       operation: null,
     };
-
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -30,7 +28,7 @@ export default class App extends React.Component {
     const { total, next, operation } = this.state;
     return (
       <div className="app">
-        <Display total={total} next={next} operation={operation} />
+        <Display total={total} operation={operation} next={next} />
         <ButtonPanel clickHandler={btnName => this.handleClick(btnName)} />
       </div>
     );
