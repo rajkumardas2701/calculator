@@ -6,15 +6,15 @@ const operate = (numberOne, numberTwo, operation) => {
   const num2 = Big(numberTwo || '0');
 
   if (operation === '+') {
-    result = num1.plus(num2);
+    result = num1.plus(num2).toFixed();
   } else if (operation === '-') {
-    result = num1.minus(num2);
+    result = num1.minus(num2).toFixed();
   } else if (operation === '/') {
-    result = num1.div(num2);
+    result = num1.div(num2).toFixed();
   } else if (operation === '*') {
-    result = num1.times(num2);
+    result = num1.times(num2).toFixed();
   } else if (operation === '%') {
-    result = num1.div(100);
+    result = num1.div(100).toFixed();
   }
   return result;
 };

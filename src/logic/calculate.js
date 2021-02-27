@@ -5,26 +5,70 @@ const calculate = (calData, btnName) => {
   const operators = ['+', '-', '/', '*'];
 
   if (btnName === '+/-') {
-    total *= -1;
-    next *= -1;
+    if (next) {
+      next = (next * -1).toString();
+    }
+    if (total && total !== 'NaN' && !next) {
+      total = (total * -1).toString();
+    }
   } else if (btnName === 'AC') {
-    total = 0;
+    total = '0';
     next = null;
     operation = null;
   } else if (btnName === '%') {
-    total = operate(total, next, operation);
-    next = null;
-    operation = null;
-  } else if (btnName === '.' && next) {
-    if (!next.includes('.')) {
-      next += '.';
+    if (next) {
+      next = operate(null, next, btnName);
+    } else if (!(total.isNaN)) {
+      total = operate(total, null, btnName);
+    }
+  } else if (btnName === '.') {
+    if (total && !(total.isNaN) && !total.split('').includes('.')) {
+      total = `${total}`;
+    }
+    if (next && !total.split('.').includes('.')) {
+      next = `${next}`;
+    }
+    if (!next && operation && total !== 'NaN') {
+      next = '0.';
     }
   } else if (operators.includes(btnName)) {
-    operate(total, next, operation);
-  } else if ((btnName === '=') && (next && total)) {
-    total = operate(total, next, operation);
-    next = null;
-    operation = null;
+    if (total === 'NaN' && next && operation) {
+      return { total: 'NaN', next: null, operation: btnName };
+    }
+    if (total && next && operation) {
+      total = operate(total, next, operation);
+      next = null;
+    }
+    operation = btnName;
+  } else if (btnName === '=') {
+    if (total === 'NaN' && next && operation) {
+      return { total: 'Invalid Operation', next: null, operation: null };
+    }
+    if (next) {
+      total = operate(total, next, operation);
+      next = null;
+      operation = null;
+    }
+  }
+
+  if (!(Number(btnName).isNaN) && (total !== '0' && total !== 'NaN') && !operation) {
+    total += btnName;
+  }
+
+  if (!(Number(btnName).isNaN) && total === '0' && !operation) {
+    total = btnName;
+  }
+
+  if (!(Number(btnName).isNaN) && operation && next !== null) {
+    next += btnName;
+  }
+
+  if (!(Number(btnName).isNaN) && operation && next === null) {
+    next = btnName;
+  }
+
+  if (total === 'NaN' && !(btnName).isNaN && !operation) {
+    total = btnName;
   }
 
   return { total, next, operation };
