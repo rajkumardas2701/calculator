@@ -25,10 +25,10 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { total, next, operation } = this.state;
+    const { next, total, operation } = this.state;
     return (
       <div className="app">
-        <Display total={total} operation={operation} next={next} />
+        <Display total={total} next={next} operation={operation} />
         <ButtonPanel clickHandler={btnName => this.handleClick(btnName)} />
       </div>
     );

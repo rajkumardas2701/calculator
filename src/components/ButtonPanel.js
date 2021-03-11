@@ -27,9 +27,9 @@ export default function ButtonPanel({ clickHandler }) {
       </div>
 
       <div className="G4">
-        <Button name="3" handleClick={clickHandler} />
-        <Button name="2" handleClick={clickHandler} />
         <Button name="1" handleClick={clickHandler} />
+        <Button name="2" handleClick={clickHandler} />
+        <Button name="3" handleClick={clickHandler} />
         <Button name="+" handleClick={clickHandler} />
       </div>
 
