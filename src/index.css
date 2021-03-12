@@ -37,7 +37,11 @@ code {
 
 .display,
 .groups {
-  width: 80%;
+  width: 100%;
+}
+
+.app {
+  width: 100%;
 }
 
 .display {

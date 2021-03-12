@@ -1,18 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Display({ result }) {
+export default function Display({ total, next, operation }) {
   return (
     <div className="display">
-      {result}
+      {total}
+      {' '}
+      {operation}
+      {' '}
+      {next}
     </div>
   );
 }
 
-Display.propTypes = {
-  result: PropTypes.string,
+Display.defaultProps = {
+  total: '0',
+  operation: null,
+  next: null,
 };
 
-Display.defaultProps = {
-  result: '0',
+Display.propTypes = {
+  total: PropTypes.string,
+  operation: PropTypes.string,
+  next: PropTypes.string,
 };

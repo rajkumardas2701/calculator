@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function Button({ name }) {
+export default function Button({ name, handleClick }) {
   return (
-    <button type="button">
+    <button type="button" onClick={() => handleClick(name)}>
       {name}
     </button>
   );
@@ -11,4 +11,5 @@ export default function Button({ name }) {
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
+  handleClick: PropTypes.func.isRequired,
 };
