@@ -45,8 +45,3 @@ export default function ButtonPanel({ clickHandler }) {
 ButtonPanel.propTypes = {
   clickHandler: PropTypes.func.isRequired,
 };
-
-// eslint-disable-next-line no-unused-vars
-const handleClick = btnName => {
-  this.props.clickHandler(btnName);
-};
