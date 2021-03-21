@@ -55,20 +55,14 @@ code {
   padding-right: 1%;
 }
 
-button {
+.otherBtn {
   width: 25%;
   height: 100px;
   font-size: larger;
 }
 
-.G5 > :first-child {
+.zeroBtn {
   width: 50%;
+  height: 100px;
+  font-size: larger;
 }
-
-/* .G1 > :last-child,
-.G2 > :last-child,
-.G3 > :last-child,
-.G4 > :last-child,
-.G5 > :last-child {
-  background-color: rgb(241, 145, 66);
-} */
