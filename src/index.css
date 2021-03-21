@@ -31,8 +31,27 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
+  width: 70%;
   margin: auto;
+}
+
+.AppBody {
+  width: 100%;
+}
+
+.rightNav {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightNav a {
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .groups {
@@ -40,7 +59,25 @@ code {
 }
 
 .app {
-  width: 100%;
+  width: 700px;
+}
+
+#quote {
+  margin: 150px 50px;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+#author {
+  text-align: end;
+  padding-right: 250px;
+  font-size: 30px;
+}
+
+#calSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .display {
@@ -65,4 +102,15 @@ code {
   width: 50%;
   height: 100px;
   font-size: larger;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
 }
