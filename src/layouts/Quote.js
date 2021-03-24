@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 const Quote = () => (
   <div className="AppBody">
     <NavBar />
-    <h3 id="quote">
+    <h3 id="quote" data-testid="quote-test">
       Mathematics is not about numbers, equations, computations,
       or algorithms: it is about understanding.
     </h3>

@@ -3,8 +3,8 @@ import NavBar from './NavBar';
 const Home = () => (
   <div className="AppBody">
     <NavBar />
-    <h3>Welcome to our page!</h3>
-    <p>
+    <h3 data-testid="home-test">Welcome to our page!</h3>
+    <p data-testid="home-para-test">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
       ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor inreprehenderit in
