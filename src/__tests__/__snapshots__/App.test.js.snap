@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="AppBody"
+>
+  <nav>
+    <h1
+      data-testid="navBar-header"
+    >
+      Math Magicians
+    </h1>
+    <div
+      className="rightNav"
+      data-testid="navBar-test"
+    >
+      <div>
+        <a
+          href="/"
+        >
+          Home
+        </a>
+      </div>
+      <div>
+        <a
+          href="/calculator"
+        >
+          Calculator
+        </a>
+      </div>
+      <div>
+        <a
+          href="/quote"
+        >
+          Quotes
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div
+    id="calSection"
+  >
+    <h3>
+      Let’s do some math!
+    </h3>
+    <div
+      className="app"
+    >
+      <div
+        className="display"
+        data-testid="test-display"
+      >
+        0
+         
+         
+      </div>
+      <div
+        className="groups"
+      >
+        <div
+          className="G1"
+        >
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            AC
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            +/-
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            %
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "orange",
+              }
+            }
+            type="button"
+          >
+            /
+          </button>
+        </div>
+        <div
+          className="G2"
+        >
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            7
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            8
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            9
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "orange",
+              }
+            }
+            type="button"
+          >
+            *
+          </button>
+        </div>
+        <div
+          className="G3"
+        >
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            4
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            5
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            6
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "orange",
+              }
+            }
+            type="button"
+          >
+            -
+          </button>
+        </div>
+        <div
+          className="G4"
+        >
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            1
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            2
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            3
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "orange",
+              }
+            }
+            type="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          className="G5"
+        >
+          <button
+            className="zeroBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            0
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "#EFEFEF",
+              }
+            }
+            type="button"
+          >
+            .
+          </button>
+          <button
+            className="otherBtn"
+            onClick={[Function]}
+            style={
+              Object {
+                "background": "orange",
+              }
+            }
+            type="button"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

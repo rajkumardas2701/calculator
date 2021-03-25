@@ -10,7 +10,11 @@ const operate = (numberOne, numberTwo, operation) => {
   } else if (operation === '-') {
     total = num1.minus(num2).toFixed();
   } else if (operation === '/') {
-    total = num1.div(num2).toFixed();
+    if (num2.c[0] === 0) {
+      total = 'Cannot divide by Zero';
+    } else {
+      total = num1.div(num2).toFixed();
+    }
   } else if (operation === '*') {
     total = num1.times(num2).toFixed();
   } else if (operation === '%') {
