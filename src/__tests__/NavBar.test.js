@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Navbar from '../layouts/Navbar';
+import Navbar from '../layouts/NavBar';
 
 afterEach(cleanup);
 
